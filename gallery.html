@@ -1,0 +1,132 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="style.css">
+
+<style>
+
+/* GALLERY SECTION */
+.gallery-container{
+    width: 90%;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.gallery-box{
+    background: #111827;
+    border: 2px solid #00ffff;
+    border-radius: 15px;
+    overflow: hidden;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow: 0 0 10px rgba(0,255,255,0.3);
+}
+
+.gallery-box:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px rgba(0,255,255,0.7);
+}
+
+.gallery-box img{
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.gallery-box p{
+    padding: 15px;
+    color: white;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* RESPONSIVE */
+@media(max-width: 900px){
+    .gallery-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media(max-width: 600px){
+    .gallery-container{
+        grid-template-columns: 1fr;
+    }
+}
+
+</style>
+
+</head>
+
+<body>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="biodata.html">Biodata</a>
+    <a href="experience.html">Experience</a>
+    <a href="education.html">Education</a>
+    <a href="family.html">Family</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="hobbies.html">Hobbies</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+<header>
+    <h1>Gallery</h1>
+    <p>Every photo in this gallery holds a moment that time tried to erase, but my soul chose to remember</p>
+</header>
+
+ <GALLERY>
+<section class="gallery-container">
+
+    <div class="gallery-box">
+        <img src="g1.jpg">
+        <p>Mini me - Behind those innocent eyes was a soul already learning how cold the world could be — a small child smiling softly while carrying shadows nobody could see.</p>
+    </div>
+
+    <div class="gallery-box">
+        <img src="g2.jpg">
+        <p>The engine screams louder than my thoughts, and every midnight ride feels like escaping a life that never truly felt like home.</p>
+    </div>
+
+    <div class="gallery-box">
+        <img src="g3.jpg">
+        <p>Beside her, I still become the little kid who forgot how heavy life really is — because a mother’s presence is the only place darkness never wins.</p>
+    </div>
+
+    <div class="gallery-box">
+        <img src="g4.jpg">
+        <p>Through every chaos, every sleepless night, and every silent battle, Rian stayed — not as someone who saved me, but as someone who never left when the world slowly did.</p>
+    </div>
+
+    <div class="gallery-box">
+        <img src="g5.jpg">
+        <p>They know the version of me hidden behind the fake smiles and late-night silence — the two souls I trust with stories I could never tell the world.</p>
+    </div>
+
+    <div class="gallery-box">
+        <img src="g6.jpg">
+        <p>My first love was never meant to stay forever — she arrived softly, changed the way my heart worked, then left scars that still echo in every quiet night.</p>
+    </div>
+
+    <div class="gallery-box">
+        <img src="g7.jpg">
+        <p>Blood made us family, but pain and memories made us unbreakable — my siblings and my father, the only people who truly witnessed the storms behind my silence</p>
+    </div>
+
+    <div class="gallery-box">
+        <img src="g8.jpg">
+        <p>Sanpeng — six broken souls tied together by chaos, loyalty, and nights full of stories the world was never meant to hear</p>
+    </div>
+
+    <div class="gallery-box">
+        <img src="g9.jpg">
+        <p>Even in my darkest nights, my cat stayed beside me quietly — a small soul with gentle eyes, healing wounds the world never noticed.</p>
+    </div>
+
+</section>
+
+</body>
+</html>
